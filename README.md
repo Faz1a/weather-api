@@ -13,8 +13,8 @@ Weather App is a Django-based web application that provides current weather info
 
 1. Clone the repository to your local machine:
 
-   `shell
-   git clone https://github.com/your-username/weatherapp.git
+   
+         git clone https://github.com/your-username/weatherapp.git
    
 2. Navigate to the project directory:
   
@@ -42,6 +42,16 @@ Weather App is a Django-based web application that provides current weather info
  7. Start the development server:
     
     
-        python manage.py runserver
+         python manage.py runserver
  
+   # Error Handling
+The API handles the following error cases:
+
+   400 Bad Request: If the required location parameter is missing or invalid.<br>
+      404 Not Found: If the requested location is not found.<br>
+         500 Internal Server Error: If there is an error retrieving the weather data from the provider.<br>
+            The API returns appropriate HTTP status codes and error messages in the response to indicate the error to the client.
+
+   # Logging
+The application logs important details about each request and response, including the request method, endpoint, request parameters, response status, and any relevant error messages.<br> The logs are stored in the log file specified in the settings.py configuration file.
 
