@@ -44,12 +44,4 @@ Weather App is a Django-based web application that provides current weather info
     
         python manage.py runserver
  
-#API Endpoints
 
-GET /current-weather
-
-Retrieve the current weather information for a specific location.
-
-Parameters:
-
-location (required): The name of the location.
